@@ -1,10 +1,12 @@
 # minio demo project 
 
-> s3 호환 파일 Object Storage 
-> https://min.io/
-> java SDK: https://docs.min.io/minio/baremetal/sdk/java/minio-java.html
-> https://docs.min.io/docs/how-to-use-aws-sdk-for-java-with-minio-server.html
+> https://min.io/  
 
+> s3 호환 파일 Object Storage   
+
+> java SDK: https://docs.min.io/minio/baremetal/sdk/java/minio-java.html
+
+> https://docs.min.io/docs/how-to-use-aws-sdk-for-java-with-minio-server.html
 
 ## install minio
 
@@ -24,9 +26,9 @@ docker run --name minio \
 ## test
 
 ```shell
-cd test/resource
+$ cd test/resource
 
-curl -X 'POST' 'http://127.0.0.1:8080/file' \
+$ curl -X 'POST' 'http://127.0.0.1:8080/file' \
 -H 'accept: application/json' \
 -H 'Content-Type: multipart/form-data' \
 -F 'file=@sample.png;type=image/png'
